@@ -8,4 +8,4 @@
 
 ### 1.1 Typora
 
-![image-20220501191827023](E:\JAVA_DEV\TyporaArticle\git_learning\Typora+Git+GitHub 轻量级笔记软件.assets\image-20220501191827023.png)
+![image-20220501191827023](.\Typora+Git+GitHub 轻量级笔记软件.assets\image-20220501191827023.png)
