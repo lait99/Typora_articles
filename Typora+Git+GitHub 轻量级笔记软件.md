@@ -38,7 +38,7 @@ Typora，是一个简洁、免费的 Markdown 编辑器，支持 Windows、macOS
 
 Git 支持 Windows、macOS 和 Linux 系统，下载之后，像平常安装软件那样安装 Git 即可。
 
-Git 官网下载：[https://git-scm.com/downloads](https://link.zhihu.com/?target=https%3A//git-scm.com/downloads)
+Git 官网下载：[https://git-scm.com/downloads](https://git-scm.com/downloads)
 
 **下面以在 windows 系统中安装 Git 客户端为例：**
 
@@ -54,7 +54,7 @@ Git 官网下载：[https://git-scm.com/downloads](https://link.zhihu.com/?targe
 
 ![img](Typora+Git+GitHub 轻量级笔记软件.assets/image2018-6-13_10-1-0.png)
 
-在这一步，也可以选择您习惯使用的文本编辑器（如 [Notepad++](ftp://172.29.25.206/Notepad%2B%2B.7.5.6.Installer.exe)、[VS Code](ftp://172.29.25.206/VSCodeSetup-x64-1.24.0.exe) 等）来代替默认的Vim
+在这一步，也可以选择您习惯使用的文本编辑器（如 `Notepad++`、`VS Code` 等）来代替默认的Vim
 
 ![img](Typora+Git+GitHub 轻量级笔记软件.assets/image2018-6-13_10-23-17.png)
 
@@ -219,23 +219,23 @@ git config --local user.email '你的邮箱'
 
 **一台电脑存放多个git账户的多个rsa秘钥**
 
- **如何在一个电脑上存储多个git账户生成的多份[rsa](https://so.csdn.net/so/search?q=rsa&spm=1001.2101.3001.7020)秘钥，实现多个账户同时使用配置的情况？今天，不幸又再次遇到这个问题。**
+ **如何在一个电脑上存储多个git账户生成的多份`rsa`秘钥，实现多个账户同时使用配置的情况？今天，不幸又再次遇到这个问题。**
 
 **问题描述**
 
-之前的做法是重新生成一个[github](https://so.csdn.net/so/search?q=github&spm=1001.2101.3001.7020)秘钥，覆盖掉之前的gitlab秘钥。每次切换过程就意味每次需要重新生成一份秘钥。只有两个账户的情况还能勉强接受下，某一天再想搞个小号刷副本时，这酸爽真的没法形容。
+之前的做法是重新生成一个`github`秘钥，覆盖掉之前的gitlab秘钥。每次切换过程就意味每次需要重新生成一份秘钥。只有两个账户的情况还能勉强接受下，某一天再想搞个小号刷副本时，这酸爽真的没法形容。
 
 **解决办法**
 
 今天总算想了一个办法，解决方式如下：
-首先，使用终端[ssh](https://so.csdn.net/so/search?q=ssh&spm=1001.2101.3001.7020)命令生成第一个默认的rsa秘钥。
+首先，使用终端`ssh`命令生成第一个默认的rsa秘钥。
 `ssh-keygen -t rsa -C "$your_email"`
 一直回车下去。生成结果如图所示：
 
 ![img](Typora+Git+GitHub 轻量级笔记软件.assets/6ec278015883d2c1a7887fad46a5aaf3.png)
 
 
-默认情况下，这个rsa[秘钥](https://so.csdn.net/so/search?q=秘钥&spm=1001.2101.3001.7020)是在你个人账户的.ssh目录下面，存在一个id_rsa私钥文件和id_rsa.pub公钥文件。然后复制公钥文件中的字符串。
+默认情况下，这个rsa秘钥是在你个人账户的.ssh目录下面，存在一个id_rsa私钥文件和id_rsa.pub公钥文件。然后复制公钥文件中的字符串。
 
 ![img](Typora+Git+GitHub 轻量级笔记软件.assets/53418e79e337ee647997cbf909d873ae.png)
 
@@ -285,7 +285,7 @@ git config --local user.email '你的邮箱'
 
 **重命名之后，再次回到 Settings > GitHub Pages 页面**
 
-会发现存在这样一个地址： https://github_username.github.io/xxxx/，这就是项目的访问路径。
+会发现存在这样一个地址： `https://github_username.github.io/xxxx/`，这就是项目的访问路径。
 
 ## **4：本地配置**
 
@@ -297,7 +297,7 @@ git config --local user.email '你的邮箱'
 
 Quicker 动作「Typora+github 云笔记初始化/远程同步」安装地址：
 
-*[https://sourl.cn/tLeFKN](https://link.zhihu.com/?target=https%3A//sourl.cn/tLeFKN)*
+*[https://sourl.cn/tLeFKN](https://sourl.cn/tLeFKN)*
 
 添加动作之后，按下鼠标中键呼出 Quicker 面板，将鼠标移动到刚安装的动作上方，按住 **Ctrl** 键，再单击鼠标左键，会弹出下图右侧的窗口，**粘贴前面创建的 GitHub 仓库的 SSH 链接**。
 
