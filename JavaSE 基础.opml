@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title></title>
+    <dateModified></dateModified>
+    <ownerName></ownerName>
+  </head>
+  <body>
+<outline text="JavaSE 基础">
+  <outline text="1：基础语法">
+    <outline text="1.1 数据类型" _note="1TB = 1024GB&#10;&#10;1GB = 1024MB&#10;&#10;1MB = 1024KB&#10;&#10;1KB = 1024B&#10;&#10;这样呢，我们对字节就能有一个基础认知。有了一个基础的认知之后，我们再来说Java中的数据类型&#10;&#10;![](E:\JAVA_DEV\TyporaArticle\git_learning\JavaSE 基础.assets\1639748785687.png)&#10;&#10;在这里，我们给出每种基本数据类型的内存占用和取值范围，大家了解一下：&#10;&#10;![](E:\JAVA_DEV\TyporaArticle\git_learning\JavaSE 基础.assets\1639748866566.png)&#10;&#10;**说明：**E+38表示：乘以10的38次方。同理E-45表示：乘以10的负45次方&#10;&#10;整数默认是：int类型&#10;&#10;浮点数默认是：double类型">
+    </outline>
+    <outline text="1.2 关键字" _note="**关键字的特点**：&#10;&#10;-   关键字的字母全部小写&#10;&#10;-   常用的代码编辑器，针对关键字有特殊的颜色标记，非常直观&#10;&#10;知道了关键字的特点后，这里我们给大家看看Java中的关键字：&#10;&#10;![](E:\JAVA_DEV\TyporaArticle\git_learning\JavaSE 基础.assets\1639750514625.png)">
+    </outline>
+    <outline text="1.3 标识符" _note="-   不能以数字开头&#10;&#10;-   不能是关键字&#10;&#10;-   区分大小写&#10;&#10;**命名约定：**&#10;&#10;-   小驼峰命名法&#10;&#10;    -   约定1：标识符一个单词的时候，首字母小写&#10;&#10;    -   范例1：name&#10;&#10;    -   约定2：标识符是多个单词的时候，第一个单词首字母小写，其他单词首字母大写&#10;&#10;    -   范例2：firstName&#10;&#10;-   大驼峰命名法&#10;&#10;    -   约定1：标识符一个单词的时候，首字母大写&#10;&#10;    -   范例1：Hello&#10;&#10;    -   约定2：标识符是多个单词的时候，每个单词首字母大写&#10;&#10;    -   范例2：HelloWorld&#10;&#10;一般来说，小驼峰命名法适用于对方法，变量等起名字。大驼峰命名法适用于对类，接口等起名字。&#10;&#10;最后再强调一点，就是我们起名字，最好能够做到：**见名知意**">
+    </outline>
+  </outline>
+  <outline text="2：运算符" _note="![](E:\JAVA_DEV\TyporaArticle\git_learning\JavaSE 基础.assets\1639985366716-1651496973414.png)">
+    <outline text="2.1 数字相加(类型转换)" _note="在Java程序中，数据参与运算，要求类型一致。这里就涉及到了数据的类型转换。而类型转换又分为两种：&#10;&#10;1.  隐式转换&#10;&#10;2.  强制转换&#10;&#10;**隐式转换：**把一个表示数据范围小的数值或者变量赋值给另一个表示数据范围大的变量&#10;&#10;![](E:\JAVA_DEV\TyporaArticle\git_learning\JavaSE 基础.assets\1639986136058.png)&#10;&#10;**强制转换：**把一个表示数据范围大的数值或者变量赋值给另一个表示数据范围小的变量&#10;&#10;格式：数据类型 变量名 = (目标数据类型)(数值或者变量)">
+    </outline>
+    <outline text="2.2 字符相加">
+    </outline>
+    <outline text="2.3 字符串相加" _note="**ASCII码表，里面有常用的字符及其对应的数值关系：**&#10;&#10;![](E:\JAVA_DEV\TyporaArticle\git_learning\JavaSE 基础.assets\1639986559242.png)">
+    </outline>
+    <outline text="字符串相加" _note="-   当“+”操作中出现字符串时，这个“+”是字符串连接符，而不是算术运算&#10;&#10;    -   “zhongguo”+ 666&#10;&#10;-   当连续进行“+”操作时，从左到右逐个执行&#10;&#10;    -   1 + 9999 + “岁zhongguo”">
+    </outline>
+    <outline text="2.5 赋值运算符" _note="Java中的赋值运算符有如下几种：&#10;&#10;![](E:\JAVA_DEV\TyporaArticle\git_learning\JavaSE 基础.assets\1639987238107.png)&#10;&#10;我们来总结一下，刚才在演示代码的时候有个注意事项：&#10;&#10;![](E:\JAVA_DEV\TyporaArticle\git_learning\JavaSE 基础.assets\1639987319209.png)">
+    </outline>
+  </outline>
+  <outline text="3: 方法">
+    <outline text="3.1 Debug查看方法调用" _note="按照 Debug 的正常使用即可，但是要注意如下事项：&#10;&#10;-   进入一个方法的时候，需要用 Step Into F7&#10;&#10;-   在方法内部，看每一行代码的执行流程，使用 Step Over F8&#10;&#10;-   注意观察方法的出现和消失，以及变量的变化">
+    </outline>
+  </outline>
+  <outline text="4: Java 内存分配" _note="![](E:\JAVA_DEV\TyporaArticle\git_learning\JavaSE 基础.assets\image-20220502224134436.png)&#10;&#10;![](E:\JAVA_DEV\TyporaArticle\git_learning\JavaSE 基础.assets\image-20220502224238922.png)">
+  </outline>
+  <outline text="5：成员变量和局部变量的区别" _note="[TABLE]">
+  </outline>
+  <outline text="6：this关键字" _note="![](E:\JAVA_DEV\TyporaArticle\git_learning\JavaSE 基础.assets\image-20220503114409615.png)">
+  </outline>
+  <outline text="7：构造方法的注意事项" _note="![](E:\JAVA_DEV\TyporaArticle\git_learning\JavaSE 基础.assets\image-20220503114731392.png)">
+  </outline>
+</outline>
+  </body>
+</opml>
